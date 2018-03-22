@@ -49,7 +49,7 @@ If you are using a plugin that does not use XML tags then you can skip steps 5-6
 ```js
   const StarRating = require('nativescript-star-rating').StarRating
 ```
-(That was just an example of how add a plugin that does not use tags but Star Ratings needs to output tags)
+(That was just an example of how add a plugin that does not use tags but Star Ratings needs to output tags so the "bonus" should not be used in this scenario)
 
 Two things to note here. Firstly we don't add namespaces in the `StarRatings` tag. And secondly we are also not defining namespaces on the page element. This is because in step 5 we used the "magical" registerElement function and that handles the namespacing automatically for us.
 
