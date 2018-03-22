@@ -37,12 +37,19 @@ import Vue from 'nativescript-vue'
 
 Vue.registerElement('StarRating', ()=> require('nativescript-star-ratings').StarRating)
 ```
+The registerElement function expects the name of the XML element as the first argument, and a function that returns the plugin as its second argument.
 
 ### Step 6
 Use the plugin. In our template tags we add the following
 ```xml
 <StarRating emptyBorderColor="white" emptyColor="white" filledBorderColor="black" filledColor="red" value="2" max="5"/>
 ```
+### Bonus
+If you are using a plugin that does not use XML tags then you can skip steps 5-6 and handle it as follows in the script tags
+```js
+  const StarRating = require('nativescript-star-rating').StarRating
+```
+(That was just an example of how add a plugin that does not use tags but Star Ratings needs to output tags)
 
 Two things to note here. Firstly we don't add namespaces in the `StarRatings` tag. And secondly we are also not defining namespaces on the page element. This is because in step 5 we used the "magical" registerElement function and that handles the namespacing automatically for us.
 
