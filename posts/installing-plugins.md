@@ -53,6 +53,6 @@ If you are using a plugin that does not use XML tags then you can skip steps 5-6
 
 Two things to note here. Firstly we don't add namespaces in the `StarRatings` tag. And secondly we are also not defining namespaces on the page element. This is because in step 5 we used the "magical" registerElement function and that handles the namespacing automatically for us.
 
-So how does this all work? Well when you run the app in Step 4 it sees that the dist folder was cleaned (in step 3) and regenerates the app, this bundles all the plugins that you added in to the dist folder. If you do not do step 3 then it will not bundle your newly added plugins into the dist folder and they won't be available to you. 
+So how does this all work? Well when you run the app in Step 4 it sees that the dist folder was cleaned (in step 3) and regenerates the app, this bundles all the plugins that you added into the dist folder. If you do not do step 3 then it will not bundle your newly added plugins into the dist folder and they won't be available to you. 
 
 In future versions of this template the plan is to remove step 3. So you will have to check the [documentation for the vue-cli template](https://github.com/nativescript-vue/vue-cli-template) to see when step 3 is no longer nescessary. 
