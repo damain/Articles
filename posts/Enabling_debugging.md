@@ -1,6 +1,6 @@
 ## Enabling Debugging
 
-In nativescript-vue's vue-cli template debuggin is not enabled by default so if there is an error with the code we get this message `Error: A Frame must be used to navigate to a Page.`
+In nativescript-vue's vue-cli template, debugging is not enabled by default so if there is an error with the code, we get this message `Error: A Frame must be used to navigate to a Page.`
 
 If you don't know better you will think that there is a problem with Frames and then start going down a crazy rabbithole. When in fact it is as simple as turning on a flag to see the real error. 
 
